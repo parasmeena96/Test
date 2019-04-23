@@ -1,0 +1,169 @@
+.icons ul.list-group.list-group-horizontal li.list-group-item {
+    background: no-repeat;
+    border: 0;
+    padding: 10px;
+}
+.main-menu ul li {
+    list-style: none;
+    float: left;
+    padding: 5px;
+}
+nav.d-flex.bg-warning .location.d-flex {
+    margin-top: 5px;
+}
+.main-menu ul li a{
+    text-decoration: none;
+}
+.lang {
+    float: left;
+    margin-right: 10px;
+}
+.location.flex-fill {
+    margin: 5px;
+}
+.lowerHeader.bg-danger.d-flex .right-side ul.list-group.list-group-horizontal li {
+    margin: 10px;
+    list-style: none;
+}
+.cart .left-cart ul.list-group.list-group-horizontal li {
+    list-style: none;
+    margin: 5px;
+}
+
+.icon-shopping {
+    float: left;
+}
+.left-cart {
+    float: left;
+    padding: 10px;
+}
+.right-side-innner {
+    float: right;
+    margin-left: 10px;
+}
+section.three-colS {
+    padding: 60px 0;
+    background: #ffcd00;
+}
+.right-side-cart {
+    padding: 16px;
+    float: right;
+    color: white;
+    background: #c50f21;
+}
+section.three-colS .container .main_three-cols.d-flex.justify-content-between .item {
+    min-height: 400px;
+    max-width: 355px;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    text-align: center;
+}
+span.top-right {
+    float: right;
+    padding: 2px 15px;
+    border-radius: 50px;
+    background: orange;
+}
+section.three-colS .main_three-cols.d-flex.justify-content-between .item ul.list-group.list-group-horizontal li {
+    background: black;
+    color: white;
+    border-radius: 77px;
+    padding: 15px 23px;
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px;
+}
+section.three-colS .container .main_three-cols.d-flex.justify-content-between .item p span {
+    color: red;
+}
+img.img-fluid.stars {
+    height: 20px;
+}
+section.three-colS .main_three-cols.d-flex.justify-content-between .item.backgroundImage {
+    background-image: url(http://eilonpaz.com/wp-content/uploads/2016/01/Eilon_Paz_0018-853x1280.jpg);
+    color: white;
+    padding: 8%;
+}
+.item.backgroundImage h5 {
+    text-transform: uppercase;
+}
+.item.last_item {
+    text-align: left !important;
+}
+.item.last_item h4 {
+    font-weight: 700;
+}
+.item.last_item a {
+    text-decoration: none;
+    color: red;
+}.item.last_item p.mt-3 {
+    font-weight: 700;
+    font-size: 14px;
+}
+section.trending_main {
+    padding: 5% 0;
+}
+section.trending_main .container .items-main.D-flex.justify-content-between .trending_item-1 {
+    min-height: 500px;
+    background: red;
+    margin: 24px;
+}
+section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 {
+    height: 500px;
+    width: 50%;
+    margin: 0 10px;
+    position: relative;
+    padding: 5% 0;
+}
+.bg-1-img {
+    background-image: url(../img/642167-POM97G-395.png);
+    background-position: center;
+    background-size: cover;
+}
+section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li .item img {
+    width: 53%;
+}
+section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li {
+    list-style: none;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.item-right-2 {
+    padding: 0 !important;
+}
+section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li .item h5 {
+    font-size: 12px;
+}
+.inner-heading p {
+    font-size: 12px;
+}
+section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li .item {
+    display: inline-block;
+    position: relative;
+}
+.items-main.d-flex.justify-content-between .trending_item-1.bg-1-img.text-center.text-white button.btn.btn-danger {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+
+
+section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li .item button.btn.btn-danger {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li .item button.btn.btn-light {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+.inner-heading p span {
+    font-weight: 700;
+}
+.items-main.d-flex.justify-content-between.second_row_of_trending {
+    margin-top: 1%;
+}
