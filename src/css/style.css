@@ -319,9 +319,10 @@ section.brandPartner hgroup {
     text-align: center;
     text-transform: uppercase;
 }
-section.brandPartner hgroup span {
-    text-transform: lowercase;
+section.brandPartner hgroup h4 {
+    text-transform: capitalize;
     font-size: 12px;
+    font-weight: 400;
 }
 .d-flex.justify-content-between.blog_main_inner_content .item.fromTheBlog_inner_item {
     width: 32%;
@@ -353,10 +354,13 @@ section.fromTheBlog hgroup {
     text-align: center;
     text-transform: uppercase;
 }
-section.fromTheBlog hgroup span {
+section.fromTheBlog hgroup h4 {
     font-size: 12px;
-    text-transform: none;
+    text-transform: capitalize;
+    font-weight: 400;
 }
+
+
 .d-flex.justify-content-between.blog_main_inner_content .item.fromTheBlog_inner_item:first-child{
     margin-left: 0;
 }
