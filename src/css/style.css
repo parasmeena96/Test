@@ -140,17 +140,47 @@ nav.d-flex.bg-warning .location.d-flex {
     float: right;
     margin-left: 10px;
 }
-
+section.three-colS::before{
+    content: "";
+    border-radius: 0% 0% 50% 50%;
+    background: red;
+}
 section.three-colS {
     padding: 5% 0px;
-    display: inline-block;
     background: #ffcd00;
-    border-radius: 0% 0% 50% 50%;
     width: 100%;
     position: relative;
     height: 220px;
 }
-
+section.three-colS::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: bottom left;
+    transform: skewY(5deg);
+    z-index: -1;
+}
+section.three-colS::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: skewY(-5deg);
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+}
 .right-side-cart {
     padding: 9px;
     float: right;
@@ -253,14 +283,42 @@ section.NewsLetter {
     background: #ffcd00;
     text-align: center;
     min-height: 150px;
-    padding: 2% 0;
-    border-bottom-left-radius: 56%;
-    border-bottom-right-radius: 100%;
+    padding: 2% 0 0;
+    position: relative;
 }
-
+section.NewsLetter::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: bottom left;
+    transform: skewY(4deg);
+    z-index: -1;
+    border-bottom-right-radius: 50%;
+}
+section.NewsLetter::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: skewY(-4deg);
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+}
 section.fromTheBlog {
     position: relative;
-    padding: 3% 0 0;
+    padding: 5% 0 0;
     display: inline-block;
     width: 100%;
 }
@@ -567,17 +625,16 @@ section.trending_main .container .items-main.d-flex.justify-content-between .tre
     padding: 5% 0;
     float: left;
     text-align: center;
+    background: white;
 }
-
 .trending_item-1.bg-1-img.text-center.text-white h2 {
     font-size: 40px;
 }
-
 .bg-1-img {
-    background-image: url(../img/Luxury-Dining-youtube-banner-template-channel-art-top-luxury-dining-food-meal-expensive-dinner-breakfast-quality-high.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../img/Luxury-Dining-youtube-banner-template-channel-art-top-luxury-dining-food-meal-expensive-dinner-breakfast-quality-high.png) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li .item img {
@@ -691,17 +748,24 @@ div#toggle_menu_icon {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+    .SiZZLINGMEAT {
+        float: right !important;
+    }
+    section.three-colS .main_three-cols.d-flex.justify-content-between .item ul.list-group.list-group-horizontal li {
+      padding: 13px 18px;
+    }
     .main-menu.flex-fill {
         width: 35%;
     }
     .trending_item-1.bg-1-img.text-center.text-white:first-child {
         margin-left: 0 !important;
     }
-    section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1:last-child {
-        margin-right: 0 !important;
-    }
+    
     section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 {
-        max-width: 575px;
+        max-width: 555px;
         width: 100%;
         min-height: 450px;
     }
@@ -722,10 +786,10 @@ div#toggle_menu_icon {
         width: 32%;
     }
     section.trending_main {
-        display: inline-block;
-        width: 100%;
-        padding: 20% 0 3%;
-    }
+    display: inline-block;
+    width: 100%;
+    padding: 2% 0 3%;
+}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -737,7 +801,7 @@ div#toggle_menu_icon {
         width: 21%;
     }
     .container {
-        max-width: 970px;
+        max-width: 960px;
     }
     .main-menu.flex-fill {
         width: 43%;
@@ -793,6 +857,9 @@ div#toggle_menu_icon {
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 
 @media (min-width: 768px) and (max-width:991px) {
+    .container{
+       max-width: 720px;
+    }
     .main-menu_inner {
         display: none;
     }
@@ -928,6 +995,9 @@ div#toggle_menu_icon {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) and (max-width:767px) {
+    .container{
+        max-width: 540px;
+    }
     .main-menu ul li {
         text-align: center;
         background: #ffa500;
@@ -1056,6 +1126,7 @@ div#toggle_menu_icon {
 /* Small devices (phones, 320px and up) */
 
 @media (min-width:320px) and (max-width:575px) {
+
     ul.main-menu_inner {
         display: none;
     }
@@ -1153,7 +1224,7 @@ div#toggle_menu_icon {
         min-height: 352px;
     }
     .items-main.d-flex.justify-content-between .trending_item-1.bg-1-img.text-center.text-white button.btn.btn-danger {
-        left: 32%;
+        left: 33%;
         padding: 10px;
     }
     section.trending_main .container .items-main.d-flex.justify-content-between .trending_item-1 ul li .item button.btn.btn-light {
@@ -1205,8 +1276,13 @@ div#toggle_menu_icon {
         margin-bottom: 0%;
     }
     section.brandPartner .inner_item_of_Brand_partner ul li {
-       width: 11%;
-       margin: 0 9px;
+        width: 12%;
+        margin: 0 9px;
+        display: inline-block;
+        float: none;
+    }
+    .inner_item_of_Brand_partner ul.list-group.list-group-horizontal {
+        text-align: center;
     }
     footer .container .inner_footer.d-flex.justify-content-between .item ul li ul.list-group.list-group-horizontal.footer-socialIcons {
         display: inline-block;
